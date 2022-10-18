@@ -17,9 +17,9 @@ print(type("hello"))
 # naming convention
 myvar = "John"
 my_var = "John"
-_my_var = "John"
+_my_var = "John"  # Gives a warning if it's not used, like a private field in C#
 myVar = "John"
-MYVAR = "John"
+MYVAR = "John"  # This is interpreted as a constant but CAN be overwritten
 myvar2 = "John"
 
 # Naming of cariables with multiple words doesn't have a set style
@@ -416,18 +416,21 @@ class Person:
     def __str__(self) -> str:  # this is the same as a C# .ToString() override
         return "My name is "+self.Name+". I am "+str(self.Age)+" years old."
 
+
 person = Person("Omar", 32)
 print(person)
 
 # inheritance
 
+
 class Child(Person):
-    def  __init__(self, name, age: int, sport) -> None:
+    def __init__(self, name, age: int, sport) -> None:
         super().__init__(name, age)
         self.Sport = sport
-    
+
     def __str__(self) -> str:
         return super().__str__()+" I like playing "+self.Sport
+
 
 child = Child("Dave", 15, "Rugby")
 print(child)
