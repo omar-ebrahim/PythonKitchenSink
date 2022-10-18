@@ -25,7 +25,7 @@ myvar2 = "John"
 # Naming of variables with multiple words doesn't have a set style
 # Be consistent
 multiWordVar = 1
-MultiWordVar = 1 # GitHub sees this as a constant
+MultiWordVar = 1  # GitHub sees this as a constant
 multi_word_var = 1
 
 # Variable assignments - can be done on one line but can look messy
@@ -434,3 +434,22 @@ class Child(Person):
 
 child = Child("Dave", 15, "Rugby")
 print(child)
+
+
+# Try...Except (try-catch)
+try:
+    print("Hello")
+except:
+    print("error")
+else:
+    print("all good!")
+finally:
+    print("this runs at the end of the block, regardless")
+
+try:
+    raise Exception("I'm throwing an error")
+except NameError as ex:
+    print(ex)
+except Exception as ex:
+    # Exception is the top level, same as C#, this must come AFTER all others
+    print(ex)
