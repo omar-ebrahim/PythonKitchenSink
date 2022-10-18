@@ -1,12 +1,4 @@
 # Variables can change type after being set
-from email.errors import HeaderMissingRequiredValue
-from inspect import ArgSpec
-from operator import truediv
-import string
-from tempfile import SpooledTemporaryFile
-from traceback import print_tb
-
-
 x = 1
 x = "test"
 print(x)
