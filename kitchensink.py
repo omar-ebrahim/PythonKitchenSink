@@ -22,10 +22,10 @@ myVar = "John"
 MYVAR = "John"  # This is interpreted as a constant but CAN be overwritten
 myvar2 = "John"
 
-# Naming of cariables with multiple words doesn't have a set style
+# Naming of variables with multiple words doesn't have a set style
 # Be consistent
 multiWordVar = 1
-MultiWordVar = 1
+MultiWordVar = 1 # GitHub sees this as a constant
 multi_word_var = 1
 
 # Variable assignments - can be done on one line but can look messy
